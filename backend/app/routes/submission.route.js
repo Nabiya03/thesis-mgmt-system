@@ -13,7 +13,7 @@ const {
 const authMiddleware = require('../middlewares/auth.middleware');
 
 const validate = require("../middlewares/validate.middleware");
-const { uploadUrlValidation, saveSubmissionValidation } = require("../validators/submissionValidators");
+// const { uploadUrlValidation, saveSubmissionValidation } = require("../validators/submissionValidators");
 
 
 //defin e the route for uploading a submission
