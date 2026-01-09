@@ -12,7 +12,7 @@ const {
 } = require('../controllers/submission.controller');
 const authMiddleware = require('../middlewares/auth.middleware');
 
-const validate = require("../middlewares/validate");
+const validate = require("../middlewares/validate.middleware");
 const { uploadUrlValidation, saveSubmissionValidation } = require("../validators/submissionValidators");
 
 

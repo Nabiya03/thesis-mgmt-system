@@ -2,7 +2,7 @@ const express = require('express');
 const commentRouter = express.Router();
 const { addCommentToProject, addAdminDiscussionComment, getProjectComments, getAdminDiscussionComments} = require('../controllers/comment.controller');
 const  authMiddleware  = require('../middlewares/auth.middleware');
-const validate = require("../middlewares/validate");
+const validate = require("../middlewares/validate.middleware");
 
 const { commentValidation } = require("../validators/commentValidators");
 
