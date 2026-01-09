@@ -21,14 +21,12 @@ submissionRouter.post('/upload-submission', upload ,uploadSubmission);
 
 submissionRouter.post(
   "/generate-upload-url",
-  validate(uploadUrlValidation),
   preSingedUrl
 );
 
 submissionRouter.post(
   "/save-data",
   authMiddleware,
-  validate(saveSubmissionValidation),
   saveData
 );
 submissionRouter.get('/generate-download-url', generateDownloadUrl); // For generating download URL

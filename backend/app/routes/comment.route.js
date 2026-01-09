@@ -12,14 +12,12 @@ const { commentValidation } = require("../validators/commentValidator");
 commentRouter.post(
   "/add-comment",
   authMiddleware,
-  validate(commentValidation),
   addCommentToProject
 );
 
 commentRouter.post(
   "/add-admin-discussion-comment",
   authMiddleware,
-  validate(commentValidation),
   addAdminDiscussionComment
 );
 // Route to get all comments for a project
