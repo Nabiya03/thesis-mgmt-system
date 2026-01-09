@@ -4,7 +4,7 @@ const { addCommentToProject, addAdminDiscussionComment, getProjectComments, getA
 const  authMiddleware  = require('../middlewares/auth.middleware');
 const validate = require("../middlewares/validate");
 
-const { commentValidation } = require("../validators/commentValidator");
+const { commentValidation } = require("../validators/commentValidators");
 
 // Route to add a comment to a project
 
