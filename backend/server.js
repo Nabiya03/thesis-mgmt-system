@@ -15,10 +15,12 @@ connectDB()
 const app = express();
 
 app.use(cors({
-  origin: "http://localhost:5173", // your frontend URL
+  origin: "http://thesis-mgmt-ns.s3-website.eu-west-2.amazonaws.com", // your frontend URL
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"], // include PATCH
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
+
+
 
 // Middleware to parse JSON bodies
 app.use(express.json());
